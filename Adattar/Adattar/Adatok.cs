@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ListakbanLevoAdatokKezeleseOOPalapokon
 {
+    #region SzamAdatok
     public class SzamAdatok
     {
         private List<int> szamok = new List<int>() { -15, 14, 11, -13, 19, 18, 16, 17, -12, 10 };
@@ -15,7 +16,9 @@ namespace ListakbanLevoAdatokKezeleseOOPalapokon
         }
 
     }
+    #endregion
 
+    #region VeletlenEgeszSzamok
     public class VeletlenEgeszSzamok
     {
         private List<int> szamok;
@@ -35,7 +38,9 @@ namespace ListakbanLevoAdatokKezeleseOOPalapokon
             }
         }
     }
+    #endregion
 
+    #region VeletlenValosSzamok
     public class VeletlenValosSzamok
     {
         private List<double> szamok;
@@ -55,7 +60,9 @@ namespace ListakbanLevoAdatokKezeleseOOPalapokon
             }
         }
     }
+    #endregion
 
+    #region MoziSzekSorok
     public class MoziSzekSorok
     {
         private List<string> sorok;
@@ -80,7 +87,9 @@ namespace ListakbanLevoAdatokKezeleseOOPalapokon
             return sorok;
         }
     }
+    #endregion
 
+    #region FejVagyIrasKiserlet
     public class FejVagyIrasKiserlet
     {
         private List<char> kiserlet;
@@ -4412,6 +4421,9 @@ namespace ListakbanLevoAdatokKezeleseOOPalapokon
             return kiserlet;
         }
     }
+    #endregion
+
+    #region IPv6Cimek
     public class IPv6Cimek
     {
 
@@ -4797,7 +4809,9 @@ namespace ListakbanLevoAdatokKezeleseOOPalapokon
             return ipcimek;
         }
     }
+    #endregion
 
+    #region LehetsegesAnagrammaSzavak
     public class LehetsegesAnagrammaSzavak
     {
         private List<string> szavak;
@@ -4928,6 +4942,9 @@ namespace ListakbanLevoAdatokKezeleseOOPalapokon
             return szavak;
         }
     }
+    #endregion
+
+    #region Szavak
     public class Szavak
     {
         List<String> szavak = new List<string>();
@@ -20588,7 +20605,9 @@ namespace ListakbanLevoAdatokKezeleseOOPalapokon
 
         }
     }
+    #endregion
 
+    #region DiakAdatok
     public class Diak
     {
         public string nev { get; set; }
@@ -20725,6 +20744,9 @@ namespace ListakbanLevoAdatokKezeleseOOPalapokon
             return diakok;
         }
     }
+    #endregion
+
+    #region Persons
     class Person
     {
         public string SSN;
@@ -20764,8 +20786,8 @@ namespace ListakbanLevoAdatokKezeleseOOPalapokon
         public List<Person> getPersons()
         {
             return listPersonsInCity;
-        }
-        
+        }        
     }
+    #endregion
 
 }
