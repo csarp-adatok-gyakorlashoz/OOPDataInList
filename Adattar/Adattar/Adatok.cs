@@ -56,7 +56,7 @@ namespace ListakbanLevoAdatokKezeleseOOPalapokon
             int db = rnd.Next(50, 100);
             for (int i = 0; i < db; i++)
             {
-                szamok.Add(rnd.Next(-20000, 20001) / 1000);
+                szamok.Add((double)rnd.Next(-20000, 20001) / 1000);
             }
         }
     }
