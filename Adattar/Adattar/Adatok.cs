@@ -20610,9 +20610,9 @@ namespace ListakbanLevoAdatokKezeleseOOPalapokon
     #region DiakAdatok
     public class Diak
     {
-        private string nev { get; }
-        private int magassag { get; }
-        private float tomeg { get; }
+        private string nev;
+        private int magassag;
+        private float tomeg;
         private bool fiu;  
         
         public string getNev()
