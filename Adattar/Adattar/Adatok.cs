@@ -20610,16 +20610,30 @@ namespace ListakbanLevoAdatokKezeleseOOPalapokon
     #region DiakAdatok
     public class Diak
     {
-        public string nev { get; set; }
-        public int magassag { get; set; }
-        public float tomeg { get; set; }
-        public bool fiu;
-        public Diak(string n, int m, float t, bool f)
+        private string nev { get; }
+        private int magassag { get; }
+        private float tomeg { get; }
+        private bool fiu;  
+        
+        public string getNev()
         {
-            nev = n;
-            magassag = m;
-            tomeg = t;
-            fiu = f;
+            return nev;
+        }
+        public int getMagassag()
+        {
+            return magassag;
+        }
+        public float getTomeg()
+        {
+            return tomeg;
+        }
+        public bool getFerfi()
+        {
+            return fiu;
+        }
+        public bool getNo()
+        {
+            return !fiu;
         }
         public override string ToString()
         {
