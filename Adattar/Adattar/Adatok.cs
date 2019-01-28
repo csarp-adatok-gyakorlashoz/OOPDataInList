@@ -20613,8 +20613,16 @@ namespace ListakbanLevoAdatokKezeleseOOPalapokon
         private string nev;
         private int magassag;
         private float tomeg;
-        private bool fiu;  
-        
+        private bool fiu;
+
+        public Diak(string nev, int magassag, float tomeg, bool fiu)
+        {
+            this.nev = nev;
+            this.magassag = magassag;
+            this.tomeg = tomeg;
+            this.fiu = fiu;
+        }
+
         public string getNev()
         {
             return nev;
