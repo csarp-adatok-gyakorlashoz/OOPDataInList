@@ -20771,10 +20771,10 @@ namespace ListakbanLevoAdatokKezeleseOOPalapokon
     #region Persons
     class Person
     {
-        public string SSN;
-        public string name;
-        public string address;
-        public int age;
+        private string SSN;
+        private string name;
+        private string address;
+        private int age;
         public Person(string ssn, string name, string addr, int age)
         {
             SSN = ssn;
@@ -20782,6 +20782,27 @@ namespace ListakbanLevoAdatokKezeleseOOPalapokon
             address = addr;
             this.age = age;
         }
+
+        public string getSSN()
+        {
+            return SSN;
+        }
+
+        public string getName()
+        {
+            return name;
+        }
+
+        public string getAddress()
+        {
+            return address;
+        }
+
+        public int getAge()
+        {
+            return age;
+        }
+
         public override string ToString()
         {
             return name + "(" + SSN + "), age:" + age + ", address:" + address;
